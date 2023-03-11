@@ -1,0 +1,963 @@
+/* ***************** cascading style sheet file ***************** */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*::selection{
+  background: #ff9c85;
+  color: white;
+}
+
+/* nav section design */
+nav{
+  background: #ff9c85;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+nav .logo{
+  float: left;
+  padding: 2.3% 3%;
+}
+
+nav .logo h1{
+    color: white;
+}
+
+/* ************ navigation menu design css *********** */
+nav .navbar{
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+/* +++++++++++ hidden on bigger screens ++++++++++ */
+nav .navbar .bonane{
+  display: none;
+}
+
+nav .toggle-btn{
+  display: none;
+}
+
+nav .navbar ul li{
+  float: left;
+  margin-right: 30px;
+}
+
+nav .navbar ul li a{
+  color: white;
+  padding: 25px 20px;
+}
+
+nav .navbar ul li a:hover{
+  border-bottom: 2px solid white;
+}
+
+
+
+nav .navbar ul li.active{
+  border-bottom: 2px solid white;
+}
+
+.active{
+  border-bottom: 2px solid white;
+}
+
+
+/* cotton design secgtion for css +++++++++++++++ */
+.web-banner{
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+#ball {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff9c85;
+  transform: translate(-20px, -20px);
+  pointer-events: none;
+  transition: width .3s, height .3s, background-color .3s, opacity .3s;
+}
+#ball.cotton-active {
+  width: 60px;
+  height: 60px;
+  background-color: #f9cabc;
+  opacity: .5;
+}
+section {
+  position: relative;
+}
+.h1, .h2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 6rem;
+  color: #ff9c85;
+  margin: 0;
+}
+.h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+
+
+/* ++++++++++++++++ typer section in css ++++++++++++++ */
+.rotate .web-text{
+  margin-top: 50px;
+}
+
+.rotate .web-text h1{
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+
+.social_media-conta{
+  position: fixed;
+  top: 280px;
+  right: 0;
+  z-index: 4;
+}
+
+.social_media-conta .social_conta a{
+  margin-right: 50px;
+  display: block;
+  background: #ff9c85;
+  font-size: 22px;
+  padding: 15px;
+  margin-top: 5px;
+  color: white;
+}
+
+.social_media-conta .social_conta a:hover{
+  margin-left: -20px;
+}
+
+
+/* +++++++++++ about me section cascading style sheet +++++++++++ */
+.about-conta{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 300px;
+}
+
+.about-conta .about-text{
+  margin-top: 100px;
+  margin-right: 0px;
+  padding: 20px;
+  width: 40%;
+}
+
+.about-conta .about-text .about-line{
+  height: 8px;
+  width: 400px;
+  background: #ff9c85;
+  margin-bottom: 20px;
+}
+
+.about-conta .about-text h2{
+  font-size: 42px;
+}
+
+.about-conta .about-text .about-btn{
+  margin-top: 20px;
+}
+
+.about-conta .about-text .about-btn a button{
+  padding: 12px 60px;
+  background: #ff9c85;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 40px;
+}
+
+.about-conta .about-text .about-btn .hire{
+  padding: 11px 60px;
+  margin-left: 20px;
+  background: white;
+  border: 2px solid #ff9c85;
+  color: #ff9c85;
+}
+
+.about-conta .about-text .about-btn .hire:hover{
+  padding: 12px 60px;
+  background: #ff9c85;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.about-conta .about-img{
+  width: 40%;
+  margin-left: 100px;
+}
+
+.about-conta .about-img img{
+  width: 60%;
+}
+
+.about-conta .about-img img:hover{
+  margin-left: 10px;
+  transition: 2s;
+}
+
+/* ********************* skills section designing css ****************** */
+.skills-conta{
+  margin-top: 80px;
+}
+
+.skills-conta .skills-text-header h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.skills-conta .skills-text-header h1 span{
+  color: #ff9c85;
+  text-decoration: underline;
+}
+
+.skills-conta .skills-content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-conta .skills-content .skills-card-conta{
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.54);
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-text{
+  margin-top: 40px;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-text h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-body{
+  margin-top: 40px;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-body h1{
+  font-size: 22px;
+  color: #ff9c85;
+  margin-bottom: 10px;
+}
+
+
+.skills-conta .skills-content .skills-card-conta .skills-label{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-label .label-conta{
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff9c85;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-label .label-conta .labeler{
+   height: 100%;
+   background: #ff9c85;
+   border-radius: 10px;
+}
+
+.skills-conta .skills-content .skills-card-conta .skills-label h1{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* *************** design section the ball on the middle card ************* */
+.design-position{
+  position: relative;
+  overflow: hidden;
+}
+
+.design-position .design{
+  width: 400px;
+  height: 400px;
+  background: #ff9c85;
+  position: absolute;
+  z-index: -2;
+  border-radius: 100%;
+  top: -150px;
+  right: -140px;
+}
+
+/* ********************** projects section ********************* */
+.projects-container{
+  margin-top: 100px;
+}
+
+.projects-container .project-text h1{
+  text-align: center;
+  color: #ff9c85;
+  font-size: 4rem;
+}
+
+.projects-container .projects-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container .projects-slide h1{
+  margin: 20px 50px;
+  font-size: 25px;
+}
+
+.projects-container .projects-slide .slide-active{
+  border-bottom: 2px solid #ff9c85;
+}
+
+.projects-container .project-img{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects-container .project-img img{
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+}
+
+/* ************************ web developnment projects section ************** */
+.web-projects{
+  margin-top: 100px;
+}
+
+.web-projects .web-text h1{
+  text-align: center;
+  color: #ff9c85;
+  font-size: 4rem;
+}
+
+.web-projects .web-conta{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.web-projects .web-conta .web-card{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  border-left: 8px solid #ff9c85;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.54);
+  margin: 40px 50px;
+}
+
+.web-projects .web-conta .web-card .web-card-conta img{
+  width: 100%;
+  height: 90px;
+}
+
+.web-projects .web-conta .web-card .card-text{
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+.web-projects .web-conta .web-card .card-text h2{
+  color:#ff9c85;
+  font-size: 18px;
+}
+
+.web-projects .more-project{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.web-projects .more-project button{
+  padding: 10px;
+  width: 300px;
+  background: #ff9c85;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+
+
+/***************** really projects ******* */
+.real_projects{
+  margin-top: 100px;
+}
+
+.real_projects .real-text h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.real_projects .real-text .behance{
+  margin-top: 5px;
+}
+
+.real_projects .real-text p{
+  text-align: center;
+}
+
+.real_projects .real-text p a{
+  color: #ff9c85;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.real_projects .real-conta{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+
+.real_projects .real-conta .real-content{
+  width: 20%;
+  margin: 10px 20px;
+}
+
+.real_projects .real-conta .real-content .real-img{
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.54);
+} 
+
+.real_projects .real-conta .real-content .real-img img{
+  width: 300px;
+  height: 300px;
+}
+
+.real_projects .real-conta .real-content .real-body{
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.54);
+  padding: 7px;
+  margin-top: -10px;
+  background: #ff9c85;
+  width: 300px;
+}
+
+.real_projects .real-conta .real-content .real-body h1{
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+
+.real_projects .real-conta .real-content .real-body p{
+  color: white;
+}
+
+.real_projects .real-conta .real-content .real-body button{
+  padding: 6px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: -2px;
+  background: #ffff;
+  outline: none;
+  border: none;
+  color: #ff9c85;
+}
+
+
+
+/* +++++++++++++++++ contact me section ++++++++++++++++ */
+.contact-conta{
+  margin-top: 100px;
+}
+
+.contact-conta .contact-text h1{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact-conta .contact-text h1 span{
+  color: #ff9c85;
+  text-decoration: underline;
+}
+
+.contact-conta .contact-text p{
+  text-align: center;
+}
+
+.contact-conta .contact-conte{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contact-conta .contact-conte .form-email{
+  /* background: #ff9c85; */
+  width: 40%;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.23);
+}
+
+.contact-conta .contact-conte .form-email h1{
+  font-size: 2rem;
+}
+
+.contact-conta .contact-conte .form-email form input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+  caret-color: #ff9c85;
+}
+
+.contact-conta .contact-conte .form-email form input:focus{
+  border-bottom: 2px solid #ff9c85;
+}
+
+.contact-conta .contact-conte .form-email form input[type="submit"]{
+  width: 30%;
+  background: #ff9c85;
+  border-radius: 20px;
+  color: white;
+  border-bottom: none;
+}
+
+.contact-conta .contact-conte .form-email form input[type="submit"]:hover{
+  padding: 9px;
+  background: white;
+  border: 2px solid #ff9c85;
+  color: #ff9c85;
+}
+
+.contact-conta .contact-conte .form-email form textarea{
+  margin-top: 17px;
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid grey;
+  caret-color: #ff9c85;
+  color: #ff9c85;
+}
+
+.contact-conta .contact-conte .form-email form textarea:focus{
+  border-bottom: 2px solid #ff9c85;
+}
+
+/* +++++++++++++++ contcat section Refeference ++++++++++++++++++ */
+.contact-conta .reference{
+  width: 35%;
+  padding: 10px;
+}
+
+.contact-conta .contact-conte .form-email{
+  font-size: 28px;
+  text-align: center;
+}
+
+.contact-conta .reference .refe-conta{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-conta .reference .refe-conta .image img{
+  border-radius: 50%;
+  border: 2px solid #ff9c85;
+}
+
+.contact-conta .reference .refe-conta .refe-text{
+  margin-left: 20px;
+}
+
+.contact-conta .reference .refe-conta .refe-text h1{
+  font-size: 18px;
+}
+
+
+/* ******************** footer section ******************** */
+footer{
+  background: #ff9c85;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-conta .footer-line{
+  width: 500px;
+  height: 4px;
+  background: white;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+footer .footer-conta h1{
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+footer .footer-conta p{
+  text-align: center;
+}
+
+footer .footer-conta .id-conta{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+footer .footer-conta .id-conta #count{
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******** media screen for laptop ************** */
+@media screen and (max-width: 1208px) {
+  nav .navbar ul li a{
+    padding: 20px 20px;
+ }
+
+ .real_projects .real-conta .real-content{
+  width: 25%;
+ }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  nav .navbar ul li{
+    margin-right: 20px;
+  }
+
+  .rotate .web-text h1{
+    font-size: 4rem;
+  }
+
+  .about-conta .about-text{
+    margin-top: 10px;
+  }
+
+  .about-conta .about-text .about-btn a button{
+    padding: 12px 40px;
+  }
+
+  .about-conta .about-text .about-btn .hire{
+    padding: 11px 40px;
+  }
+
+  .skills-conta .skills-content .skills-card-conta{
+    width: 40%;
+  }
+
+  .real_projects .real-conta .real-content{
+    width: 30%;
+  }
+}
+
+
+/* ++++++++++++++++++++ media query for 767px section +++++++ */
+@media screen and (max-width: 767px) {
+  .h1, .h2 {
+    font-size: 4rem;
+  }
+
+  nav .navbar ul li a{
+    padding: 10px 10px;
+ }
+
+ .rotate .web-text h1{
+  font-size: 3rem;
+ }
+
+ .about-conta .about-text{
+  margin-top: 0px;
+}
+
+.about-conta .about-text{
+  width: 40%;
+}
+
+.about-conta .about-text .about-line{
+  height: 8px;
+  width: 300px;
+}
+
+.about-conta .about-text .about-btn .hire{
+  padding: 11px 20px;
+}
+
+.about-conta .about-text .about-btn a button{
+  padding: 12px 30px;
+}
+
+.about-conta .about-img img{
+  width: 100%;
+}
+
+.real_projects .real-conta{
+  margin-left: -100px;
+} 
+
+.real_projects .real-conta .real-content{
+  width: 20%;
+  margin: 10px 100px;
+}
+
+.contact-conta .contact-conte .form-email{
+  width: 70%;
+}
+
+.contact-conta .reference{
+  margin-top: 50px;
+  width: 50%;
+}
+
+.about-conta .about-img img:hover{
+  margin-left: 0px;
+  transition: 2s;
+}
+}
+
+/* ******** media screen for small screen  ************** */
+@media screen and (max-width: 600px) {
+  nav .navbar{
+  margin-top: 20px;
+ }
+
+ .contact-conta .contact-conte .form-email{
+  width: 90%;
+ }
+
+ .contact-conta .reference{
+  margin-top: 50px;
+  width: 90%;
+ }
+}
+
+@media screen and (max-width: 562px) {
+  nav .navbar{
+    float: none;
+    background: #ff9c85;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    z-index: 23;
+    margin-left: -500px;
+    transition: 1s;
+  }
+
+  nav .navbar ul{
+    margin-top: 50px;
+  }
+
+  nav .navbar ul li{
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0px;
+  }
+
+
+  nav .navbar ul li a{
+    border-bottom: none;
+    font-weight: 900;
+  }
+
+  nav .navbar ul li a:hover{
+    color: black;
+  }
+
+  
+  nav .navbar .bonane{
+    display: block;
+  }
+
+  nav .navbar .bonane img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  nav .navbar .bonane h1{
+    text-align: center;
+  }
+
+  nav .navbar .bonane a{
+    text-decoration: none;
+    margin-left: 50px;
+  }
+
+  nav .toggle-btn{
+    display: block;
+    float: right;
+    font-size: 38px;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: white;
+  }
+
+  .rotate .web-text h1{
+   font-size: 2rem;
+  }
+
+  .about-conta{
+    margin-top: 150px;
+  }
+
+  .social_media-conta{
+    margin-right: -30px;
+  }
+
+  .about-conta .about-text{
+    width: 90%;
+  }
+
+  .about-conta .about-text .about-line{
+    width: 200px;
+  }
+
+  .about-conta .about-text .about-btn a button{
+    padding: 12px 30px;
+  }
+
+  .about-conta .about-text .about-btn .hire{
+    padding: 11px 20px;
+  }
+
+  .about-conta .about-img{
+    width: 100%;
+  }
+
+  .about-conta .about-img img{
+    margin-left: -40px;
+  }
+
+  .skills-conta .skills-content .skills-card-conta{
+    width: 90%;
+  }
+
+  .real_projects .real-conta .real-content{
+    width: 60%;
+  }
+
+  .real_projects .real-conta{
+    margin-left: -50px;
+  } 
+
+  .real_projects .real-conta .real-content{
+   margin: 20px 5px;
+  }
+
+  .h1, .h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3rem;
+    color: #ff9c85;
+    margin: 0;
+  }
+
+  footer .footer-conta h1{
+    font-size: 12px;
+  }
+
+  footer .footer-conta .footer-line{
+    width: 300px;
+  }
+
+  .about-conta .about-text .about-btn .hire:hover{
+    padding: 12px 20px;
+  }
+
+  .real_projects .real-text h1{
+    font-size: 2rem;
+  }
+
+  .real_projects .real-text p{
+    font-size: 14px;
+  }
+
+  .contact-conta .contact-text h1{
+    font-size: 22px;
+  }
+
+  .contact-conta .contact-conte .form-email h1{
+    font-size: 22px;
+  }
+
+  .contact-conta .reference .refe-header h1{
+    font-size: 18px;
+  }
+
+  .contact-conta .reference .refe-conta .refe-text h1{
+    font-size: 14px;
+  }
+
+  .skills-conta .skills-content .skills-card-conta .skills-text .ui{
+    color: white;
+  }
+
+  .real_projects .real-conta .real-content .real-body h1{
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+
+  .real_projects .real-conta .real-content .real-body p{
+    font-size: 13px;
+  }
+
+  .real_projects .real-conta .real-content .real-body a{
+    font-size: 13px;
+  }
+
+  
+
+}
+
+
+
